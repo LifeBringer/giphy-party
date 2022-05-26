@@ -1,5 +1,5 @@
 // Global Constants
-const api_key = "RNtYFS9Q4vYDV1E5LLJsw58nQdlOZReC";
+const api_key = "aeLJsRPjrsrjzdyd75vFxXwPx22ofB7K";
 const limit = 10;
 const rating = 'g';
 
@@ -8,6 +8,12 @@ async function getResults(searchTerm) {
     const response = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${searchTerm}&lang=en&limit=${limit}&rating=${rating}`);
     const data = await response.json();
     
+    displayResults(data);
+    
+}
+
+// Display results function
+function displayResults(data) {
     let randomIndex = Math.floor(Math.random() * data.data.length);
 
     try {
@@ -38,13 +44,17 @@ var currentSearchTerm = '';
 const searchButton = document.querySelector('#search-button');
 searchButton.addEventListener('click', (e) => {
     e.preventDefault();
+    handleFormSubmit();
+});
+
+function handleFormSubmit () {
     const searchTerm = document.querySelector('#search-term').value;
     if (searchTerm !== currentSearchTerm) {
         clearGIF();
         currentSearchTerm = searchTerm;
     }
     getResults(searchTerm);
-});
+}
 
 const deleteButton = document.querySelector('#delete-button');
 deleteButton.addEventListener('click', (e) => {
