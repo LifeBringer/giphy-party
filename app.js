@@ -106,3 +106,7 @@ loadMoreBtn.addEventListener('click', (e) => {
     handleFormSubmit();
 });
 
+window.onload = function() {
+    document.querySelector('#search-term').value = trending;
+    handleFormSubmit();
+}
