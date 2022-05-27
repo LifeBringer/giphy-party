@@ -1,5 +1,4 @@
 ## Goals
-By the end of this lab, you will be able to...
  - use APIs to make HTTP requests and parse through responses using the Fetch API.
  - identify and implement asynchronous programming with async/await functions and commands.
  - create a branch using git commands and explain the purpose and importance of version control.
@@ -12,9 +11,9 @@ By the end of this lab, you will be able to...
  - [x] At least one accessible feature (i.e color-sensitive choices, alt-text for images, etc)
 ### Stretch Features
  - [x] Explore additional properties of the Gif Object
- - [ ] Incorporate various buttons that use a different API endpoint.
- - [ ] Improve CSS styles with Bootstrap framework
- - [ ] Incorporate :hover styling and DOM events
+ - [x] Incorporate various buttons that use a different API endpoint.
+ - [x] Improve CSS styles with Bootstrap framework
+ - [x] Incorporate :hover styling and DOM events
 
 ### Resources
 - [HTML input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)

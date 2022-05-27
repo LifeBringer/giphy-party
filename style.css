@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     text-align: center;
@@ -11,13 +15,13 @@ body {
 
 h1 {
     color: white;
+    text-transform: uppercase;
     font-size: 50px;
     font-family: "Roboto Slab", sans-serif;
 }
 
 #container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -28,12 +32,12 @@ button {
     border-radius: 5px;
 }
 
-#search-button {
+#search-btn {
     background-color: orange;
     margin-right: 20px;
 }
 
-#delete-button {
+#trending-btn {
     background-color: plum;
 }
 
@@ -44,4 +48,42 @@ img {
     margin-bottom: 20px;
     width: 300px;
     height: 300px;
+}
+
+.load-more {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#load-more-btn {
+    background-color: red;
+    color: white;
+    align-self: center;
+}
+
+
+/* :hover items */
+
+.alt-wrap p.alt {
+    position: absolute;
+    opacity: 0;
+    /* hide initially */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: grey;
+    transition: all 300ms ease;
+    transition-delay: 300ms;
+}
+
+.alt-wrap:hover > p.alt {
+    opacity: .9;
+    transition-delay: 0s;
 }
