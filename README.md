@@ -22,3 +22,6 @@
 - [Giphy API Docs](https://developers.giphy.com/docs/api#quick-start-guide)
 - [Understanding GitHub flow](https://guides.github.com/introduction/flow/)
 - [Branching in GitHub](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches)
+
+## Walkthrough
+![walkthrough](https://user-images.githubusercontent.com/1930836/170639843-51e4f1e9-3156-4ad6-9308-291b96d3c7ca.gif)
